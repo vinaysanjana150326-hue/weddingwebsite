@@ -10,7 +10,7 @@ const timelineEvents = [
     title: "The First Meeting",
     description:
       "It started with a quiet cup of tea and a polite smile. What began as an arranged meeting between two strangers soon turned into a soulful connection. From nervous first talks to late-night conversations, we found love in the little things: in honesty, in steadiness, and in the comfort of saying, we’ll figure it out together. Two strangers. One honest connection. A lifetime of togetherness.",
-    image: "/images/first_meet.jpeg",
+    image: "/weddingwebsite/images/first_meet.jpeg",
     imageAlt: "Vinay and Sanjana at their first meeting",
   },
   

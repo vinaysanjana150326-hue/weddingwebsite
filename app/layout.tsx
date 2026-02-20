@@ -18,7 +18,7 @@ const _greatVibes = Great_Vibes({
 })
 
 export const metadata: Metadata = {
-  title: 'Eleanor & James - Our Wedding',
+  title: 'Vinay & Sanjana - Our Wedding',
   description: 'Join us in celebrating the love of Eleanor Rose and James William. September 15, 2026 at Rosewood Manor Gardens.',
   icons: {
     icon: [

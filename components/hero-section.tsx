@@ -12,7 +12,7 @@ export function HeroSection() {
     >
       {/* Background Image */}
       <Image
-        src="/images/vinaysanju.jpeg"
+        src="/weddingwebsite/images/vinaysanju.jpeg"
         alt="Vinay and Sanjana in a beautiful engagement setting"
         fill
         className="object-cover"
