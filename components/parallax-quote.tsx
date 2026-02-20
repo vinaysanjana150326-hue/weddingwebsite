@@ -7,7 +7,7 @@ export function ParallaxQuote() {
     <section
       className="parallax-section relative flex min-h-[50vh] items-center justify-center"
       style={{
-        backgroundImage: "url('/images/quote.jpg')",
+        backgroundImage: "url('/weddingwebsite/images/quote.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-warm-brown/60" />
