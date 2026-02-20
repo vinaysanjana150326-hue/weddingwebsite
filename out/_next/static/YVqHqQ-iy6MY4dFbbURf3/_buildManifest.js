@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/wedding-invitation-website//_next/:path+",
+        "source": "/.//_next/:path+",
         "destination": "/wedding-invitation-website/_next/:path+"
       }
     ],

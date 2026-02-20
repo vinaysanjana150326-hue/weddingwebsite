@@ -9,7 +9,8 @@ const nextConfig = {
   },
   output: 'export', // ← required for static export
   basePath: '/wedding-invitation-website', // ← your repo name
-  assetPrefix: '/wedding-invitation-website/',
+  assetPrefix: './',          // use relative paths for _next
+  trailingSlash: true,  
 };
 
 export default nextConfig;
