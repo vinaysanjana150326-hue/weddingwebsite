@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/.//_next/:path+",
+        "source": "/weddingwebsite//_next/:path+",
         "destination": "/weddingwebsite/_next/:path+"
       }
     ],
