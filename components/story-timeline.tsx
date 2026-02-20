@@ -9,34 +9,11 @@ const timelineEvents = [
     date: "June 2019",
     title: "The First Meeting",
     description:
-      "It was a warm summer evening when fate brought us together at a mutual friend's gathering. Between shared laughter and the discovery of a hundred common interests, we knew something extraordinary had begun.",
-    image: "/images/story-first-meet.jpg",
-    imageAlt: "Eleanor and James at their first meeting",
+      "It started with a quiet cup of tea and a polite smile. What began as an arranged meeting between two strangers soon turned into a soulful connection. From nervous first talks to late-night conversations, we found love in the little things: in honesty, in steadiness, and in the comfort of saying, we’ll figure it out together. Two strangers. One honest connection. A lifetime of togetherness.",
+    image: "/images/first_meet.jpeg",
+    imageAlt: "Vinay and Sanjana at their first meeting",
   },
-  {
-    date: "December 2020",
-    title: "Our First Adventure",
-    description:
-      "With a year of growing closer behind us, we embarked on our first trip together to the coast. Walking hand in hand along the shore at sunset, we knew this was the beginning of a lifetime of adventures.",
-    image: "/images/story-proposal.jpg",
-    imageAlt: "Eleanor and James on their first trip together",
-  },
-  {
-    date: "February 2025",
-    title: "The Proposal",
-    description:
-      "On a hillside overlooking the valley at golden hour, James got down on one knee and asked the question that changed everything. Through tears of joy, Eleanor said yes, and a new chapter began.",
-    image: "/images/story-engagement.jpg",
-    imageAlt: "The proposal moment",
-  },
-  {
-    date: "September 2026",
-    title: "Forever Begins",
-    description:
-      "Surrounded by those we love most, we will say our vows and begin our forever at the beautiful Rosewood Manor Gardens. This is the day we have been dreaming of.",
-    image: "/images/venue.jpg",
-    imageAlt: "Rosewood Manor Gardens wedding venue",
-  },
+  
 ]
 
 export function StoryTimeline() {

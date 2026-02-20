@@ -76,7 +76,7 @@ export function RsvpForm() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="border-b border-border bg-transparent px-0 py-3 text-sm font-light text-foreground placeholder:text-muted-foreground/50 focus:border-gold focus:outline-none transition-colors"
-              placeholder="your@email.com"
+              placeholder="vinaysanjana150326@email.com"
             />
           </div>
 
@@ -114,20 +114,7 @@ export function RsvpForm() {
             </select>
           </div>
 
-          {/* Dietary */}
-          <div className="flex flex-col gap-2 md:col-span-2">
-            <label htmlFor="rsvp-dietary" className="text-xs font-medium uppercase tracking-[0.2em] text-foreground">
-              Dietary Requirements
-            </label>
-            <input
-              id="rsvp-dietary"
-              type="text"
-              value={formData.dietary}
-              onChange={(e) => setFormData({ ...formData, dietary: e.target.value })}
-              className="border-b border-border bg-transparent px-0 py-3 text-sm font-light text-foreground placeholder:text-muted-foreground/50 focus:border-gold focus:outline-none transition-colors"
-              placeholder="Any allergies or dietary preferences"
-            />
-          </div>
+          
 
           {/* Message */}
           <div className="flex flex-col gap-2 md:col-span-2">

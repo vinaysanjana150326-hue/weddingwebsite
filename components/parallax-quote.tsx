@@ -7,7 +7,7 @@ export function ParallaxQuote() {
     <section
       className="parallax-section relative flex min-h-[50vh] items-center justify-center"
       style={{
-        backgroundImage: "url('/images/venue.jpg')",
+        backgroundImage: "url('/images/quote.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-warm-brown/60" />
@@ -18,9 +18,6 @@ export function ParallaxQuote() {
             style={{ fontFamily: "var(--font-great-vibes)" }}
           >
             {'"Whatever our souls are made of, his and mine are the same."'}
-          </p>
-          <p className="mt-6 text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/70">
-            Emily Bront&euml;
           </p>
         </AnimateOnScroll>
       </div>

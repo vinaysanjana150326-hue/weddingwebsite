@@ -1,3 +1,5 @@
+"use client"
+
 import { FloralDivider } from "@/components/floral-divider"
 
 export function Footer() {
@@ -9,10 +11,10 @@ export function Footer() {
           className="mt-8 text-4xl text-gold"
           style={{ fontFamily: "var(--font-great-vibes)" }}
         >
-          {"Eleanor & James"}
+          {"Vinay & Sanjana"}
         </p>
         <p className="mt-3 text-sm font-medium uppercase tracking-[0.25em] text-muted-foreground">
-          September 15, 2026
+          March 15, 2026
         </p>
         <p className="mt-8 text-xs text-muted-foreground tracking-wider">
           Made with love for our cherished guests

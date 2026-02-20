@@ -10,10 +10,13 @@ interface TimeLeft {
 }
 
 function calculateTimeLeft(targetDate: Date): TimeLeft {
-  const difference = targetDate.getTime() - new Date().getTime()
+  const now = new Date()
+  const difference = targetDate.getTime() - now.getTime()
+
   if (difference <= 0) {
     return { days: 0, hours: 0, minutes: 0, seconds: 0 }
   }
+
   return {
     days: Math.floor(difference / (1000 * 60 * 60 * 24)),
     hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
@@ -23,37 +26,26 @@ function calculateTimeLeft(targetDate: Date): TimeLeft {
 }
 
 export function CountdownTimer() {
-  const weddingDate = new Date("2026-09-15T16:00:00")
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft(weddingDate))
-  const [mounted, setMounted] = useState(false)
+  // Use local date numbers to avoid timezone issues
+  const weddingDate = new Date(2026, 2, 15, 16, 0, 0) // Mar is 2
+
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  })
 
   useEffect(() => {
-    setMounted(true)
+    // calculate immediately on mount
+    setTimeLeft(calculateTimeLeft(weddingDate))
+
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(weddingDate))
     }, 1000)
-    return () => clearInterval(timer)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
 
-  if (!mounted) {
-    return (
-      <div className="flex items-center justify-center gap-4 md:gap-8">
-        {["Days", "Hours", "Minutes", "Seconds"].map((label) => (
-          <div key={label} className="flex flex-col items-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gold/30 bg-ivory/20 backdrop-blur-sm md:h-20 md:w-20">
-              <span className="text-2xl font-light text-primary-foreground md:text-3xl">
-                --
-              </span>
-            </div>
-            <span className="mt-2 text-[10px] font-medium uppercase tracking-[0.2em] text-primary-foreground/70">
-              {label}
-            </span>
-          </div>
-        ))}
-      </div>
-    )
-  }
+    return () => clearInterval(timer)
+  }, [weddingDate])
 
   const units = [
     { label: "Days", value: timeLeft.days },

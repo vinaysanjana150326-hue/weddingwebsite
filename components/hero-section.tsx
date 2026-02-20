@@ -6,11 +6,14 @@ import { CountdownTimer } from "@/components/countdown-timer"
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <Image
-        src="/images/hero-couple.jpg"
-        alt="Eleanor and James in a beautiful garden setting"
+        src="/images/vinaysanju.jpeg"
+        alt="Vinay and Sanjana in a beautiful engagement setting"
         fill
         className="object-cover"
         priority
@@ -22,6 +25,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center">
+        
         {/* Pre-heading */}
         <p className="animate-fade-in text-xs font-medium uppercase tracking-[0.35em] text-primary-foreground/80">
           Together with their families
@@ -36,7 +40,7 @@ export function HeroSection() {
             animationFillMode: "both",
           }}
         >
-          {"Eleanor & James"}
+          Vinay & Sanjana
         </h1>
 
         {/* Decorative line */}
@@ -56,7 +60,7 @@ export function HeroSection() {
           className="animate-fade-in mt-6 text-lg font-light tracking-[0.15em] text-primary-foreground md:text-xl"
           style={{ animationDelay: "0.6s", animationFillMode: "both" }}
         >
-          September 15, 2026
+          March 15, 2026
         </p>
 
         {/* Countdown */}
@@ -67,17 +71,17 @@ export function HeroSection() {
           <CountdownTimer />
         </div>
 
-        {/* CTA */}
-        <Link
-          href="/event"
+        {/* CTA - Scroll to Details */}
+        {/* <Link
+          href="#details"
           className="animate-fade-in mt-12 inline-flex items-center gap-2 border border-gold/50 bg-gold/20 px-8 py-3 text-xs font-medium uppercase tracking-[0.25em] text-primary-foreground backdrop-blur-sm transition-all duration-300 hover:bg-gold/40 hover:border-gold"
           style={{ animationDelay: "1s", animationFillMode: "both" }}
         >
           View Details
-        </Link>
+        </Link> */}
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
         <div className="flex flex-col items-center gap-2">
           <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-primary-foreground/60">
