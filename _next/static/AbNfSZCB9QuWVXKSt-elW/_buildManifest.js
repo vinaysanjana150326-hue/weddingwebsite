@@ -4,7 +4,7 @@ self.__BUILD_MANIFEST = {
     "beforeFiles": [
       {
         "source": "/.//_next/:path+",
-        "destination": "/wedding-invitation-website/_next/:path+"
+        "destination": "/weddingwebsite/_next/:path+"
       }
     ],
     "fallback": []
