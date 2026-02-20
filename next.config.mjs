@@ -8,6 +8,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export', // ← required for static export
+  basePath: '/wedding-invitation-website', // ← your repo name
+  assetPrefix: '/wedding-invitation-website/',
 };
 
 export default nextConfig;
