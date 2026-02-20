@@ -50,7 +50,7 @@ export function EventDetails() {
         <div className="mt-16">
           <div className="relative overflow-hidden rounded-md border border-gold/20 shadow-lg">
             <Image
-              src="/weddingwesite/images/venue.jpg"
+              src="/weddingwebsite/images/venue.jpg"
               alt="Sudha Veerendra Samudhaya Bhavan"
               width={1200}
               height={700}
