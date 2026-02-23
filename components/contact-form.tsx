@@ -12,10 +12,24 @@ export function ContactForm() {
     message: "",
   })
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
+  async function handleSubmit(e: React.FormEvent) {
+  e.preventDefault()
+
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  })
+
+  if (response.ok) {
     setSubmitted(true)
+  } else {
+    alert("Something went wrong. Please try again.")
   }
+}
+
 
   if (submitted) {
     return (
