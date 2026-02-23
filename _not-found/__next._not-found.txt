@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/weddingwebsite/_next/static/chunks/561bd3a9b4fab8fc.js","/weddingwebsite/_next/static/chunks/d2be314c3ece3fbe.js","/weddingwebsite/_next/static/chunks/65a8c72ab5cf43c6.js"],"default"]
 3:I[37457,["/weddingwebsite/_next/static/chunks/561bd3a9b4fab8fc.js","/weddingwebsite/_next/static/chunks/d2be314c3ece3fbe.js","/weddingwebsite/_next/static/chunks/65a8c72ab5cf43c6.js"],"default"]
-0:{"buildId":"Pj7yL-q2KCzQRYxcM-dxu","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"5R0tIY88nEjHMufvCPMaP","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
