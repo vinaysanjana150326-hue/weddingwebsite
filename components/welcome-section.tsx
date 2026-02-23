@@ -9,7 +9,7 @@ export function WelcomeSection() {
       <div className="mx-auto max-w-3xl px-6 text-center">
         <SectionHeading
           title="Welcome"
-          subtitle="We joyfully invite you to share in our celebration"
+          subtitle="Please join us in marking this joyful occasion"
         />
 
         <AnimateOnScroll delay={200}>

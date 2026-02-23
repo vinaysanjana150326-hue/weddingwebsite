@@ -8,12 +8,16 @@ const details = [
   {
     icon: Clock,
     title: "Ceremony",
-    lines: ["Saturday, March 15, 2026", "9:00 AM"],
+    lines: [
+      "Reception: Saturday, March 14, 2026, 7:30 PM onwards",
+      "Muhurtham: Sunday, March 15, 2026, 9:00 AM to 9:50 AM",
+    ],
   },
   {
     icon: MapPin,
     title: "Venue",
     lines: ["Sudha Veerendra Samudhaya Bhavan", "Davangere, Karnataka"],
+    link: "https://maps.app.goo.gl/HFyJPTUUzkUjajAd6",
   },
 ]
 
@@ -21,21 +25,24 @@ export function EventDetails() {
   return (
     <div className="mx-auto max-w-6xl px-6">
       {/* Cards */}
-      <div className="grid gap-8 sm:grid-cols-2">
+      <div className="grid gap-10 sm:grid-cols-2">
         {details.map((detail, index) => (
           <AnimateOnScroll key={detail.title} delay={index * 150}>
-            <div className="group flex flex-col items-center rounded-md border border-border bg-card p-10 text-center transition-all duration-500 hover:border-gold/40 hover:shadow-xl hover:shadow-gold/5">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary">
-                <detail.icon className="h-6 w-6 text-gold" strokeWidth={1.5} />
+            <div className="group flex flex-col items-center rounded-lg border border-border bg-card p-12 text-center transition-all duration-500 hover:border-gold/50 hover:shadow-2xl hover:shadow-gold/10 hover:scale-105">
+              {/* Icon */}
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary">
+                <detail.icon className="h-8 w-8 text-gold" strokeWidth={2} />
               </div>
 
-              <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.25em] text-foreground">
+              {/* Title */}
+              <h3 className="mt-6 text-sm sm:text-base font-bold uppercase tracking-wide text-foreground">
                 {detail.title}
               </h3>
 
-              <div className="mt-4 space-y-1">
+              {/* Lines */}
+              <div className="mt-4 space-y-2">
                 {detail.lines.map((line) => (
-                  <p key={line} className="text-sm font-light text-muted-foreground">
+                  <p key={line} className="text-sm sm:text-base font-medium text-muted-foreground leading-relaxed">
                     {line}
                   </p>
                 ))}
